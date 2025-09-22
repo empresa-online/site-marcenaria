@@ -55,4 +55,103 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
     .card img {
-      max-width: 100
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .preco {
+      font-size: 1.2rem;
+      color: #4a2c2a;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .whatsapp-btn {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .whatsapp-btn:hover {
+      background: #1ebe57;
+    }
+    .trust {
+      background: #fff3e6;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+    .trust img {
+      width: 100px;
+      margin: 10px;
+    }
+    footer {
+      background: #4a2c2a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: #f5d5b5;
+      text-decoration: none;
+    }
+    @media(max-width:600px){
+      header h1 { font-size: 2rem; }
+      header p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Marcenaria Artesanal</h1>
+    <p>Peças únicas feitas com carinho e qualidade</p>
+  </header>
+
+  <nav>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="produtos" class="produtos">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Banco de Madeira">
+      <h3>Banco de Madeira</h3>
+      <p class="preco">R$ 150,00</p>
+      <a class="whatsapp-btn" href="https://wa.me/5527992510941?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Banco%20de%20Madeira" target="_blank">Comprar no WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Prateleira Rústica">
+      <h3>Prateleira Rústica</h3>
+      <p class="preco">R$ 200,00</p>
+      <a class="whatsapp-btn" href="https://wa.me/5527992510941?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Prateleira%20R%C3%BAstica" target="_blank">Comprar no WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Mesa de Centro">
+      <h3>Mesa de Centro</h3>
+      <p class="preco">R$ 450,00</p>
+      <a class="whatsapp-btn" href="https://wa.me/5527992510941?text=Ol%C3%A1!%20Tenho%20interesse%20na%20Mesa%20de%20Centro" target="_blank">Comprar no WhatsApp</a>
+    </div>
+  </section>
+
+  <section class="trust">
+    <h2>Compre com Segurança</h2>
+    <p>Pagamento seguro e clientes satisfeitos garantem confiança na sua compra.</p>
+    <img src="https://via.placeholder.com/100x50?text=Selo+Verificado" alt="Selo de Verificação">
+    <img src="https://via.placeholder.com/100x50?text=Pagamento+Seguro" alt="Pagamento Seguro">
+  </section>
+
+  <footer id="contato">
+    <p>📞 Entre em contato pelo WhatsApp: 
+      <a class="whatsapp-btn" href="https://wa.me/5527992510941?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20produtos" target="_blank">(27) 99251-0941</a>
+    </p>
+    <p>© 2025 Marcenaria Artesanal - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
